@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if(gameIsOver)
                     {
-                        binding.winnerMessage.setText( "Its a draw");
+                        binding.winnerMessage.setText( "Game is draw");
 
                         binding.playAgainLayout.setVisibility(View.VISIBLE);
                         binding.playerTV.setVisibility(View.INVISIBLE);
