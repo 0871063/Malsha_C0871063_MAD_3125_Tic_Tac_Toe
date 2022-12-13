@@ -10,7 +10,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Tic Tac Toe..!!"
+        android:text="Tic Tac Toe..!!"
         android:textSize="35sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -144,6 +144,19 @@
 
     </GridLayout>
 
+    <TextView
+        android:id="@+id/playerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="Player One Turn"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"/>
     <LinearLayout
         android:id="@+id/playAgainLayout"
         android:layout_width="wrap_content"

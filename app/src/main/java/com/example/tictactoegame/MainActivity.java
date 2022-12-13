@@ -33,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
             if (activePlayer == 0) {
                 counter.setImageResource(R.drawable.cross);
                 activePlayer = 1;
+                binding.playerTV.setText("Player Two Turn...");
             } else {
                 counter.setImageResource(R.drawable.circle);
                 activePlayer = 0;
+                binding.playerTV.setText("Player One Turn...");
             }
 
             counter.animate().translationYBy(1000f).rotation(360f).setDuration((long) 300f);
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                     binding.winnerMessage.setText(winner + " has won!!");
 
                     binding.playAgainLayout.setVisibility(View.VISIBLE);
+                    binding.playerTV.setVisibility(View.INVISIBLE);
                 }
                 else{
                     boolean gameIsOver=true;
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         binding.winnerMessage.setText( "Its a draw");
 
                         binding.playAgainLayout.setVisibility(View.VISIBLE);
+                        binding.playerTV.setVisibility(View.INVISIBLE);
                     }
                 }
 
@@ -76,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
     {
         gameActive =true;
         binding.playAgainLayout.setVisibility(View.INVISIBLE);
-
+        binding.playerTV.setVisibility(View.VISIBLE);
+        binding.playerTV.setText("Player One Turn...");
         activePlayer=0;
         for(int i = 0; i< gameStates.length; i++)
         {
