@@ -10,7 +10,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tic Tac Toe..!!"
+        android:text="@string/title"
         android:textSize="35sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -148,7 +148,7 @@
         android:id="@+id/playerTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:text="Player One Turn..."
+       android:text="@string/playerOneTurn"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold|italic"
@@ -183,7 +183,7 @@
             android:id="@+id/winnerMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Winner message!!"
+            android:hint="@string/title"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -195,7 +195,7 @@
             android:backgroundTint="#FFEB3B"
             android:onClick="playAgain"
             android:layout_marginTop="20dp"
-            android:text="Play Again!!"
+            android:text="@string/playAgain"
             android:textColor="@color/black"
             app:iconTint="#FFEB3B" />
     </LinearLayout>
